@@ -1,0 +1,15 @@
+selenium==4.27.1
+webdriver-manager==4.0.2
+beautifulsoup4==4.12.3
+lxml==5.1.0
+Pillow==10.2.0
+requests==2.31.0
+imagehash==4.3.1
+torch>=2.0.0
+torchvision>=0.15.0
+timm>=0.9.0  # Для Vision Transformer
+transformers>=4.30.0  # Для CLIP в multimodal_search
+# Colab: тот же стиль нижних границ — requirements-colab.txt (ноутбуки COLAB_*.ipynb), не копия pip freeze с ПК
+# A-Vision (test_avision.py): pip install qwen-vl-utils accelerate; нужен свежий transformers (см. карточку AvitoTech/avision)
+qwen-vl-utils
+accelerate

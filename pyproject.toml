@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clothing-classifier"
+version = "1.0.0"
+description = "Clothing image classifier using Vision Transformer"
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "Pillow>=10.0.0",
+    "timm>=0.9.0",  # Для Vision Transformer
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
+[tool.setuptools]
+# Указываем отдельные Python модули (файлы .py в корне)
+py-modules = [
+    "train_classifier",
+    "organize_data", 
+    "avito_scraper",
+    "dedupe_images"
+]

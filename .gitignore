@@ -1,0 +1,82 @@
+# --- Данные и выгрузки (не коммитить) ---
+avito_data/
+avito_data_old/
+avito_data_fashion/
+avito_data_different/
+classifier_data/
+models/
+*.rar
+*.zip
+*.7z
+
+# Индекс CLIP / чекпоинты (если лежат вне models/)
+clip_index.pt
+*.pth
+*.pt
+
+# Крупные/временные артефакты скрапинга и прогонов
+avito_page_sample.html
+results.txt
+*.stackdump
+
+# Случайные локальные файлы в корне (убрать строки, если нужны в репо)
+/1
+/2
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Локальный кэш (в т.ч. HF transformers при CACHE в проекте)
+.cache/
+
+# TensorBoard
+runs/
+wandb/
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# WebDriver (selenium)
+.wdm/

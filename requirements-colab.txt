@@ -1,0 +1,16 @@
+# Google Colab — тот же дух, что и requirements.txt (нижние границы, без копирования чужого pip freeze).
+# Жёстко НЕ фиксируем transformers==5.x: локально у тебя было просто >=4.30.
+# Если на Colab снова разъедется API — один раз зафиксируй вручную (как у тебя на ПК): transformers==...
+#
+# Установка: COLAB_OUTFIT_CLIP_PIPELINE.ipynb или:
+#   pip install -q -r requirements-colab.txt
+# torch не трогаем — из образа Colab.
+
+transformers>=4.30.0
+accelerate>=1.1.0
+safetensors>=0.4.3
+huggingface-hub>=0.24.0
+qwen-vl-utils
+bitsandbytes>=0.43.0
+Pillow>=10.2.0,<12
+sentencepiece>=0.2.0
